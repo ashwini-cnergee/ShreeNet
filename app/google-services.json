@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "546201232020",
+    "firebase_url": "https://shreenet-171ed.firebaseio.com",
+    "project_id": "shreenet-171ed",
+    "storage_bucket": "shreenet-171ed.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:546201232020:android:2d88835281d5bfb5",
+        "android_client_info": {
+          "package_name": "cnergee.myapp.shreenet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "546201232020-22v14jrdnipq09ohce837se0eo86em1n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAoExtyEEFnqmqI6q5x3lcO37wGtm0pBP8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
