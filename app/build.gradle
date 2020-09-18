@@ -1,17 +1,19 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 26
-    buildToolsVersion '26.0.2'
+    compileSdkVersion 28
+    buildToolsVersion '28.0.2'
     defaultConfig {
         minSdkVersion 14
-        targetSdkVersion 26
+        targetSdkVersion 28
         versionCode 3
         versionName '1.2'
         multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         applicationId 'cnergee.myapp.shreenet'
     }
     dexOptions {
+        javaMaxHeapSize "4g"
         preDexLibraries = false
     }
 
@@ -21,6 +23,15 @@ android {
     }
     productFlavors {
     }
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
 }
 
 configurations {
@@ -29,20 +40,20 @@ configurations {
 
 
 dependencies {
-    compile files('libs/ksoap2-android-assembly-3.0.0-RC.4-jar-with-dependencies.jar')
-    compile files('libs/traction-ashok-v1.jar')
-    compile files('libs/picasso-2.2.0.jar')
-    compile files('libs/otto-1.3.5.jar')
-    compile files('libs/commons-net-3.3.jar')
-    compile files('libs/org.apache.http.legacy.jar')
-    compile files('libs/ftp4j-1.7.2.jar')
-    compile project(':floatinglabellib')
-    compile files('libs/android-async-http-1.4.4.jar')
-    compile project(':residemenu')
-    compile project(':wheeldemo')
-    compile 'com.android.support:appcompat-v7:23.3.0'
-    compile 'it.sephiroth.android.library.imagezoom:imagezoom:+'
-    compile 'com.google.android.gms:play-services-gcm:9.0.0'
-    compile 'com.google.firebase:firebase-messaging:9.0.0'
-    compile 'com.android.support:cardview-v7:23.4.0'
+    implementation files('libs/ksoap2-android-assembly-3.0.0-RC.4-jar-with-dependencies.jar')
+    implementation files('libs/traction-ashok-v1.jar')
+    implementation files('libs/picasso-2.2.0.jar')
+    implementation files('libs/otto-1.3.5.jar')
+    implementation files('libs/commons-net-3.3.jar')
+    implementation files('libs/org.apache.http.legacy.jar')
+    implementation files('libs/ftp4j-1.7.2.jar')
+    implementation project(':floatinglabellib')
+    //compile files('libs/android-async-http-1.4.4.jar')
+    implementation project(':residemenu')
+    implementation project(':wheeldemo')
+    implementation 'com.android.support:appcompat-v7:23.3.0'
+    implementation 'it.sephiroth.android.library.imagezoom:imagezoom:+'
+    implementation 'com.google.android.gms:play-services-gcm:9.0.0'
+    implementation 'com.google.firebase:firebase-messaging:9.0.0'
+    implementation 'com.android.support:cardview-v7:23.4.0'
 }

@@ -12,13 +12,14 @@
 
 
 
-    <string name="SOAP_URL">http://103.54.180.3:8005/CCRMToMobileIntegration.asmx?wsdl</string>
+    <string name="SOAP_URL">http://103.54.180.3:8010/CCRMToMobileIntegration.asmx?wsdl</string>
 
     <string name="METHOD_GET_MEMBER_INFO">GetMemberInfo</string>
     <string name="METHOD_GET_LOGIN_BY_NUMBER">GetLoginByNumber</string>
     <string name="METHOD_GET_LOGIN_BY_MEMBERID">GetLoginByMemberId</string>
     <string name="METHOD_UPDATE_NOTIFICATION">UpdateNotification</string>
     <string name="METHOD_PACKAGE_DETAILS">GetSubscriberPackageDetails</string>
+    <string name="METHOD_SUBSCRIBER_STATUS">GetSubscriberStatus</string>
     <!-- OLD <string name="METHOD_SUBSCRIBER_DETAILS">SubscriberDetails</string> -->
     <string name="METHOD_SUBSCRIBER_DETAILS">MyAppSubscriberDetails</string>
     <string name="METHOD_INSERT_PAYMENTPICKUP">InsertPaymentPickupRequest</string>
